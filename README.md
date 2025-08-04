@@ -7,7 +7,7 @@
 
 **네이티브 macOS 애플리케이션으로 재탄생한 PowerPoint 폰트 문제 해결 도구**
 
-이 프로젝트는 [Dr. Ralf S. Engelschall](https://github.com/rse/pptx-surgeon)의 강력한 `pptx-surgeon` CLI 도구를 기반으로 만들어진 웹 인터페이스(https://github.com/jvisualschool/pptx-surgeon-web)를, 다시 Electron을 사용하여 macOS 데스크톱 애플리케이션으로 전환한 것입니다. 이제 복잡한 설정 없이 앱을 실행하여 PPTX 파일의 폰트 문제를 간편하게 해결할 수 있습니다.
+이 프로젝트는 (https://github.com/rse/pptx-surgeon)의 강력한 `pptx-surgeon` CLI 도구를 기반으로 만들어진 웹 인터페이스(https://github.com/jvisualschool/pptx-surgeon-web)를, 다시 Electron을 사용하여 macOS 데스크톱 애플리케이션으로 전환한 것입니다. 이제 복잡한 설정 없이 앱을 실행하여 PPTX 파일의 폰트 문제를 간편하게 해결할 수 있습니다.
 
 ---
 
