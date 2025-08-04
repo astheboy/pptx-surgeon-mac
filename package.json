@@ -1,0 +1,86 @@
+{
+    "name": "pptx-surgeon",
+    "homepage": "http://github.com/rse/pptx-surgeon",
+    "description": "A macOS desktop app for fixing font issues in PowerPoint files, built with Electron.",
+    "main": "main.js",
+    "version": "0.9.9",
+    "license": "MIT",
+    "author": {
+        "name": "Dr. Ralf S. Engelschall",
+        "email": "rse@engelschall.com",
+        "url": "http://engelschall.com"
+    },
+    "keywords": [
+        "pptx",
+        "powerpoint",
+        "openxml"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/rse/pptx-surgeon.git"
+    },
+    "bugs": {
+        "url": "http://github.com/rse/pptx-surgeon/issues"
+    },
+    "bin": {
+        "pptx-surgeon": "./pptx-surgeon.js"
+    },
+    "devDependencies": {
+        "babel-eslint": "10.1.0",
+        "electron": "^37.2.5",
+        "electron-builder": "^26.0.12",
+        "eslint": "7.17.0",
+        "eslint-config-standard": "16.0.2",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-node": "11.1.0",
+        "eslint-plugin-promise": "4.2.1",
+        "npm-run-all": "4.1.5",
+        "pkg": "4.4.9",
+        "shx": "0.3.3"
+    },
+    "dependencies": {
+        "chalk": "4.1.0",
+        "execa": "5.0.0",
+        "express": "^5.1.0",
+        "fontoxpath": "3.14.2",
+        "js-yaml": "4.0.0",
+        "jszip": "^3.10.1",
+        "mkdirp": "1.0.4",
+        "multer": "^2.0.2",
+        "rimraf": "3.0.2",
+        "slimdom": "2.3.2",
+        "slimdom-sax-parser": "1.4.0",
+        "strip-ansi": "6.0.0",
+        "tmp": "0.2.1",
+        "xml-formatter": "2.4.0",
+        "yargs": "16.2.0"
+    },
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "scripts": {
+        "start": "electron .",
+        "lint": "eslint --config eslint.yaml pptx-surgeon*.js",
+        "dist": "electron-builder"
+    },
+    "build": {
+        "appId": "com.electron.pptx-surgeon",
+        "productName": "PPTX Surgeon",
+        "mac": {
+            "category": "public.app-category.utilities",
+            "icon": "build/icon.icns"
+        },
+        "files": [
+            "main.js",
+            "preload.js",
+            "pptx-surgeon.js",
+            "pptx-surgeon-*.js",
+            "public/",
+            "node_modules/"
+        ],
+        "asarUnpack": [
+            "pptx-surgeon.js",
+            "pptx-surgeon-*.js"
+        ]
+    }
+}
